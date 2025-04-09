@@ -8,7 +8,7 @@ def carregar_dataset(caminho):
         return [json.loads(linha) for linha in f]
 
 # ✅ Carregar dataset de contexto
-dataset = carregar_dataset("/dataset_2000.jsonl")
+dataset = carregar_dataset("dataset_2000.jsonl")
 
 # ✅ Função para construir o contexto
 def construir_contexto(area, numeros, problema, numeros_problema, impacto, objetivo):
